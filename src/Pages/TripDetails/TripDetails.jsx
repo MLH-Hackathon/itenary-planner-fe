@@ -3,6 +3,7 @@ import DatePicker from 'react-datepicker';
 import { SubmitButton } from '../../Styles/Components/Button';
 import './TripDetails.styles.scss';
 import 'react-datepicker/dist/react-datepicker.css';
+import profile from '../../Assets/profile.jpg';
 
 const TripDetails = () => {
    const [startLocation, setStartLocation] = useState('');
@@ -42,10 +43,12 @@ const TripDetails = () => {
    };
    return (
       <div className="tripDetailsContainer">
-         <img src="" alt="profile" />
+         <div className="imageBox">
+            <img src={profile} alt="profile" />
+         </div>
          <h1>Enter Details of your Recent Trip..</h1>
          <form action="" className="formContainer" onSubmit={handleSubmit}>
-            <label>Travel Location</label>
+            <label className="inputLabel">Travel Location</label>
             <div className="flexContainer">
                <input
                   type="text"
@@ -62,39 +65,47 @@ const TripDetails = () => {
                   onChange={handleEndLocation}
                />
             </div>
-            <div className="flexContainer">
-               <label htmlFor="">Number of Travelers</label>
+            <div className="flexContainer-numTravelers">
+               <label htmlFor="numOfTravelers" className="inputLabel">
+                  Number of Travelers
+               </label>
                <input
                   type="text"
                   value={numOfTravelers}
                   onChange={handleNumOfTravelers}
                />
             </div>
-
-            <label htmlFor="">Date</label>
-            <div className="flexContainer">
-               <DatePicker
-                  className="datePicker"
-                  selected={startDate}
-                  placeholderText="From"
-                  minDate={new Date()}
-                  onChange={handleStartDate}
-               />
-               <DatePicker
-                  className="datePicker"
-                  selected={endDate}
-                  placeholderText="To"
-                  minDate={startDate}
-                  onChange={handleEndDate}
-               />
+            <div className="dateContainer">
+               <label htmlFor="date" className="inputLabel">
+                  Dates
+               </label>
+               <div className="flexContainer">
+                  <DatePicker
+                     className="datePicker"
+                     selected={startDate}
+                     placeholderText="From"
+                     minDate={new Date()}
+                     onChange={handleStartDate}
+                  />
+                  <DatePicker
+                     className="datePicker"
+                     selected={endDate}
+                     placeholderText="To"
+                     minDate={startDate}
+                     onChange={handleEndDate}
+                  />
+               </div>
             </div>
-            <div className="flexContainer">
-               <label htmlFor="">Total Spent</label>
+            <div className="flexContainer-spending">
+               <label htmlFor="total spent" className="inputLabel">
+                  Total Spent
+               </label>
                <input
                   type="text"
                   placeholder="$345"
                   value={totalSpending}
                   onChange={handleTotalSpending}
+                  className="totalSpending"
                />
             </div>
             <div className="btnContainer">
