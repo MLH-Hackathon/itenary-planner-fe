@@ -8,6 +8,7 @@ import LogIn from '../src/Pages/LogIn/LogIn';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './Components/NavBar/NavBar.component';
 import TripDetails from './Pages/TripDetails/TripDetails';
+import { ShareItinerary } from './Pages/ShareItinerary/ShareItinerary';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <React.StrictMode>
@@ -18,6 +19,7 @@ root.render(
             <Route path="/signUp" element={<SignUp />} />
             <Route path="/login" element={<LogIn />} />
             <Route path="/tripDetails" element={<TripDetails />} />
+            <Route path="/shareItinerary" element={<ShareItinerary />} />
          </Routes>
       </BrowserRouter>
    </React.StrictMode>
