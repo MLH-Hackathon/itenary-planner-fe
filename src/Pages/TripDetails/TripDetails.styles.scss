@@ -1,0 +1,28 @@
+.tripDetailsContainer {
+   width: 50rem;
+   margin: auto;
+}
+
+.formContainer {
+   width: 75%;
+   margin: auto;
+   background-color: rgba(217, 217, 217, 0.3);
+   border-radius: 10px;
+
+   .userInput {
+      margin: 0 0.35rem;
+      width: 40%;
+   }
+   .datePicker {
+      width: 80%;
+   }
+   .flexContainer {
+      width: 100%;
+      display: flex;
+   }
+   .btnContainer {
+      padding: 2rem 0;
+      margin: auto;
+      width: 80%;
+   }
+}
