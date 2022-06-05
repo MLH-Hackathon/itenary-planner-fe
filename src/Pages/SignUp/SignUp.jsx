@@ -41,61 +41,8 @@ const SignUp = () => {
             }
             
         })
-        // (async () => {
-        //     const rawResponse = await fetch(baseUrl + '/signup', {
-        //       method: 'POST',
-        //       headers: {
-        //         'Accept': 'application/json',
-        //         'Content-Type': 'application/json',
-        //       },
-        //       body: JSON.stringify({
-        //         "name": name,
-        //         "email": email,
-        //         "password": password,
-        //         "cnfPassword": cnfPassword
-        //       })
-        //     });
-        //     const content = await JSON.stringify(rawResponse);
-            
-        //     console.log("BODY IS "+content);
-        //   })();
+    
     }
-
-  
-    // const signUpHandler = () => {
-    //      setUserData({
-    //         "name": {name},
-    //         "email": {email},
-    //         "password": {password},
-    //         "cnfPassword": {cnfPassword}
-    //     })
-
-    //     console.log({password})
-    //     console.log({userData})
-    //     axios.post(
-    //         baseUrl + "/signup",
-    //         {
-    //             "name": {name},
-    //             "email": {email},
-    //             "password": {password},
-    //             "cnfPassword": {cnfPassword}
-    //         }, 
-    //         {
-    //             headers: { 
-    //                 'Content-Type' : 'application/json',
-    //                 "Access-Control-Allow-Origin": "*"
-    //             }
-    //         }
-    //     ).then(response => {
-    //         if(response.data == 'SignUp Successful'){
-    //             setAuthenticated(true)
-    //             navigate("/")
-    //             console.log("RESPONSE is : " + response.data);
-    //         }else if (response.data == 'Username already exists'){
-    //             setUsernameExists(true);
-    //         }
-            
-    //     });
 
     
     return (

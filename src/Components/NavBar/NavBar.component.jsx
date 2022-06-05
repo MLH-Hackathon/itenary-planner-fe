@@ -1,10 +1,12 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useContext} from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.styles.scss';
 import logo from '../../Assets/GI.png';
+import {UserContext} from '../../Context/UserContext'
 
 const NavBar = () => {
-   const currentUser = true;
+   const { authenticated} = useContext(UserContext);
+
    return (
       <Fragment>
          <div className="nav-container">
@@ -17,12 +19,27 @@ const NavBar = () => {
                <Link className="link " to="/">
                   Homeage{' '}
                </Link>
-               {currentUser ? (
+               {authenticated ? (
+                  <Link className="link " to="/tripdetails">
+                     Add Trip Details
+                  </Link>
+               ) : (
+                  <></>
+               )}
+
+               {authenticated ? (
+                  <Link className="link " to="/settings">
+                     Settings
+                  </Link>
+               ) : (
+                  <></>
+               )}
+               {authenticated ? (
                   <Link className="link " to="#">
                      Log Out
                   </Link>
                ) : (
-                  <Link className="link " to="/signin">
+                  <Link className="link " to="/login">
                      {' '}
                      Log In
                   </Link>

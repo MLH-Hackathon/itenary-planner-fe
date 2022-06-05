@@ -5,15 +5,18 @@ export const UserContext = createContext({
     setCurrentUser: (user) => {},
     baseUrl:"http://localhost:8080",
     authenticated: false,
-    setAuthenticated: (auth) => {}
-
+    setAuthenticated: (auth) => {},
+    jwt: "",
+    setJwt: (token) => {}
     })
 
 
 export const UserProvider = ({children}) =>{
     const [currentUser,setCurrentUser] = useState();
     const [authenticated,setAuthenticated] = useState();
+    const [jwt,setJwt] = useState();
     const baseUrl ="http://localhost:8080";
-    const value = {currentUser,setCurrentUser,authenticated,setAuthenticated,baseUrl};
+    const value = {currentUser,setCurrentUser,authenticated,setAuthenticated,baseUrl,jwt,setJwt};
     return <UserContext.Provider value={value}> {children}</UserContext.Provider>
+
 }
