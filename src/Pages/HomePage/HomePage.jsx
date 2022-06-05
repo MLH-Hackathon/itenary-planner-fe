@@ -44,10 +44,94 @@ const Homepage = () => {
             ]
         }]},
         {"id": 32,
-        "name": "Bikram Singh ",
+        "name": "Keanu Reaves ",
         "trip": [{
             "id": 2,
             "location": "Paris, France",
+            "fromDate": "05/26/22",
+            "toDate": "05/30/22", 
+            "numberOfPeople": "2",
+            "totalCost": "$4,023",
+            "activity": [{
+                "id": 12,
+                "name": "Adam's Croissants",
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, ",
+                "pictures": "https://itinerary-planner-global.s3.amazonaws.com/tengyart-kSvpTrfhaiU-unsplash.jpg", 
+                "cost": "$23",
+                "address": "3134 Normandale St, Richardson",
+                },
+            ]
+        }]
+        
+    },
+    {"id": 12,
+        "name": "Captain Marvel ",
+        "trip": [{
+            "id": 2,
+            "location": "Paris, France",
+            "fromDate": "05/26/22",
+            "toDate": "05/30/22", 
+            "numberOfPeople": "2",
+            "totalCost": "$4,023",
+            "activity": [{
+                "id": 12,
+                "name": "Adam's Croissants",
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, ",
+                "pictures": "https://itinerary-planner-global.s3.amazonaws.com/tengyart-kSvpTrfhaiU-unsplash.jpg", 
+                "cost": "$23",
+                "address": "3134 Normandale St, Richardson",
+                },
+            ]
+        }]
+        
+    },
+    {"id": 98,
+        "name": "Johny Depp ",
+        "trip": [{
+            "id": 2,
+            "location": "Paris, France",
+            "fromDate": "05/26/22",
+            "toDate": "05/30/22", 
+            "numberOfPeople": "2",
+            "totalCost": "$4,023",
+            "activity": [{
+                "id": 12,
+                "name": "Adam's Croissants",
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, ",
+                "pictures": "https://itinerary-planner-global.s3.amazonaws.com/tengyart-kSvpTrfhaiU-unsplash.jpg", 
+                "cost": "$23",
+                "address": "3134 Normandale St, Richardson",
+                },
+            ]
+        }]
+        
+    },
+    {"id": 45,
+        "name": "The Hulk ",
+        "trip": [{
+            "id": 2,
+            "location": "Paris, France",
+            "fromDate": "05/26/22",
+            "toDate": "05/30/22", 
+            "numberOfPeople": "2",
+            "totalCost": "$4,023",
+            "activity": [{
+                "id": 12,
+                "name": "Adam's Croissants",
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, ",
+                "pictures": "https://itinerary-planner-global.s3.amazonaws.com/tengyart-kSvpTrfhaiU-unsplash.jpg", 
+                "cost": "$23",
+                "address": "3134 Normandale St, Richardson",
+                },
+            ]
+        }]
+        
+    },
+    {"id": 87,
+        "name": "Captain America",
+        "trip": [{
+            "id": 2,
+            "location": "Los Angeles, USA",
             "fromDate": "05/26/22",
             "toDate": "05/30/22", 
             "numberOfPeople": "2",

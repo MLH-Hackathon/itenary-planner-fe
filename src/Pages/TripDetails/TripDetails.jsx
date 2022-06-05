@@ -4,6 +4,8 @@ import { SubmitButton } from '../../Styles/Components/Button';
 import './TripDetails.styles.scss';
 import 'react-datepicker/dist/react-datepicker.css';
 import profile from '../../Assets/profile.jpg';
+import {Link, Navigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 const TripDetails = () => {
    const [startLocation, setStartLocation] = useState('');
@@ -12,6 +14,7 @@ const TripDetails = () => {
    const [startDate, setStartDate] = useState('');
    const [endDate, setEndDate] = useState('');
    const [totalSpending, setTotalSpending] = useState('');
+   const navigate = useNavigate();
 
    const handleSubmit = (e) => {
       e.preventDefault();
@@ -115,7 +118,7 @@ const TripDetails = () => {
                />
             </div>
             <div className="btnContainer">
-               <SubmitButton> Next</SubmitButton>
+               <div onClick={()=> navigate('/shareItinerary')}className="tripDetailsNextButton" to="/shareItinerary"> Next</div>
             </div>
          </form>
       </div>

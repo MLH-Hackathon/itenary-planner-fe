@@ -5,11 +5,14 @@ import { Icon } from '@iconify/react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { SubmitButton } from '../../Styles/Components/Button';
+import {Link} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 export const ShareItinerary = () => {
    const [imageName, setImageName] = useState('Upload an image');
    const [location, setLocation] = useState('');
    const [tripDate, setTripDate] = useState('');
+   const navigate = useNavigate();
    const [amount, setAmount] = useState('');
    const [description, setDescription] = useState('');
 
@@ -115,7 +118,7 @@ export const ShareItinerary = () => {
                   </div>
 
                   <div className="btnContainer">
-                     <SubmitButton> Next</SubmitButton>
+                     <div onClick={()=> navigate('/')} className="tripDetailsNextButton" > SAVE</div>
                   </div>
                </div>
             </form>
