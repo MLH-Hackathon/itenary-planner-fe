@@ -12,34 +12,19 @@ const Homepage = () => {
         "trip": [{
             "id": 2,
             "location": "Bali",
-            "fromDate": "",
-            "toDate": "", 
+            "fromDate": "05/26/22",
+            "toDate": "05/30/22", 
             "numberOfPeople": "4",
             "totalCost": "$232",
             "activity": [{
                 "id": 12,
                 "name": "Kayaking",
-                "description": "dasfadsf adsfasdf ",
-                "pictures": "", 
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, ",
+                "pictures": "https://itinerary-planner-global.s3.amazonaws.com/tengyart-kSvpTrfhaiU-unsplash.jpg", 
                 "cost": "$34",
                 "address": "3134 Normandale St, Richardson",
                 },
-                {
-                    "id": 13,
-                    "name": "Rafting",
-                    "description": "",
-                    "pictures": "", 
-                    "cost": "",
-                    "address": "3134 Normandale St, Richardson"   
-                },
-                {
-                    "id": 14,
-                    "name": "Hiking",
-                    "description": "",
-                    "pictures": "", 
-                    "cost": "",
-                    "address": "3134 Normandale St, Richardson"   
-                },]
+            ]
         }]
         
     }]
@@ -65,14 +50,15 @@ const Homepage = () => {
                         onChange = {inputHandler}
                     />
                 </label>
+             </div>  
 
-            {userInfo.map((user) => 
-                (
-                    <ItenaryCard key={user.id} user ={user}/>
-                )
-            )}
-          
-         </div>  
+            <div className="cardsContainer">
+                {userInfo.map((user) => 
+                    (
+                        <ItenaryCard key={user.id} user ={user}/>
+                    )
+                )}
+            </div>
         </div>  
     )
 }

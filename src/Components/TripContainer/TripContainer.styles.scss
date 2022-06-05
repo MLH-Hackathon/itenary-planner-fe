@@ -2,33 +2,53 @@
 
 }
 
-.InfoContainer{
+.tripInfoContainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 60px;
+    max-height: 60px;
+    background-color: #F7F7F7;
+    padding: 20px 40px;
 
 }
 .nameAndLocationContainer{
-
+    display: flex;
+    flex-direction: column;
 }
 
 .fullName{
-
+    width: 100%;
+    font-size: 22px;
+    font-weight: 900;
 }
 
 .tripLocation{
-
+    padding: 0 20px;
+    font-size: 13px;
 }
 
 .tripDetailsContainer{
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .tripDetails{
-
+    padding: 0 20px;
+    font-size: 13px;
 }
 
 .tripTotalCost{
+    padding: 7px 50px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #e0e0e0e7;
+    border-radius: 20px;
 
 }
-
 .spent{
-    
+    padding: 0 20px;
+    font-size: 13px;
 }

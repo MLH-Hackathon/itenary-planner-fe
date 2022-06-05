@@ -1,4 +1,5 @@
 import React from 'react'
+import './TripContainer.styles.scss'
 
 const TripContainer = (props) => {
 
