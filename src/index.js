@@ -10,21 +10,24 @@ import NavBar from './Components/NavBar/NavBar.component';
 import TripDetails from './Pages/TripDetails/TripDetails';
 import { ShareItinerary } from './Pages/ShareItinerary/ShareItinerary';
 import Settings from './Pages/Settings/Settings';
+import {UserProvider} from './Context/UserContext'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <React.StrictMode>
       <BrowserRouter>
-         <NavBar />
-         <Routes>
-            <Route path="" element={<App />} />
-            <Route path="/signUp" element={<SignUp />} />
-            <Route path="/login" element={<LogIn />} />
-            <Route path="/tripDetails" element={<TripDetails />} />
-            <Route path="/shareItinerary" element={<ShareItinerary />} />
-            <Route path="/settings" element={<Settings />} />
-         </Routes>
+      <UserProvider>
+            <NavBar />
+            <Routes>
+               <Route path="" element={<App />} />
+               <Route path="/signUp" element={<SignUp />} />
+               <Route path="/login" element={<LogIn />} />
+               <Route path="/tripDetails" element={<TripDetails />} />
+               <Route path="/shareItinerary" element={<ShareItinerary />} />
+               <Route path="/settings" element={<Settings />} />
+            </Routes>
+         </UserProvider>
       </BrowserRouter>
    </React.StrictMode>
 );
