@@ -18,28 +18,50 @@ const SignUp = () => {
     const[cnfPassword,setCnfPassword] = useState();
     const [userData,setUserData] = useState({});
    
+    
     const signUpHandler = () => {
-        (async () => {
-            const rawResponse = await fetch(baseUrl + '/signup', {
-              method: 'POST',
-              headers: {
-                'Accept': 'application/json',
+        const requestOptions = {
+            method: 'POST',
+            headers: { 
                 'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*',
-                'Origin':'http://localhost:3000',
-              },
-              body: JSON.stringify({
-                "name": {name},
-                "email": {email},
-                "password": {password},
-                "cnfPassword": {cnfPassword}
-              })
-            });
-            const content = await rawResponse.json();
+                'Accept': 'application/json' },
+            body: JSON.stringify({ 
+                "name": name,
+                "email": email,
+                "password": password,
+                "cnfPassword": cnfPassword
+             })}
+        fetch(baseUrl + '/signup',requestOptions)
+        .then((response)=> response)
+        .then((data)=>{
+            console.log(JSON.stringify(data.status))
+            if(data.status == 200){
+                navigate('/');
+                setAuthenticated(() => true);
+            }
             
-            console.log(content);
-          })();
+        })
+        // (async () => {
+        //     const rawResponse = await fetch(baseUrl + '/signup', {
+        //       method: 'POST',
+        //       headers: {
+        //         'Accept': 'application/json',
+        //         'Content-Type': 'application/json',
+        //       },
+        //       body: JSON.stringify({
+        //         "name": name,
+        //         "email": email,
+        //         "password": password,
+        //         "cnfPassword": cnfPassword
+        //       })
+        //     });
+        //     const content = await JSON.stringify(rawResponse);
+            
+        //     console.log("BODY IS "+content);
+        //   })();
     }
+
+  
     // const signUpHandler = () => {
     //      setUserData({
     //         "name": {name},
