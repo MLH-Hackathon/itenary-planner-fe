@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import {Link} from 'react-router-dom'
 import './NavBar.styles.scss'
-import  logo from '../../Assets/GI-logo.png'
+import  logo from '../../Assets/GI.png'
 
 const NavBar = () => {
 
@@ -9,7 +9,9 @@ const NavBar = () => {
     return (
         <Fragment>
             <div className="nav-container">
-                {/* <img src={logo} width='60px' height='60px'/> */}
+                <div className="logoImageContainer">
+                <img height="100%" width="100%"  src={logo}/>
+                </div>
 
                 {/* onClick={signOutHandler} */}
                 <div className="links-container">

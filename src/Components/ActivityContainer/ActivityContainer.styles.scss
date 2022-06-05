@@ -3,16 +3,13 @@
     height: 100%;
     overflow: hidden;
 }
-img{
-    height: 100%; 
-    width:100%;
-}
 
 .sliderContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     // background-color: blue;
     height: 300px;
+    max-height: 500px;
 }
 
 .nameCost{
@@ -59,4 +56,5 @@ flex-direction: column;
 align-items: center;
 padding: 20px;
 justify-content: center;
+overflow: hidden;
 }

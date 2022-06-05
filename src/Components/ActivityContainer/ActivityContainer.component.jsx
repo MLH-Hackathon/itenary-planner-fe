@@ -6,7 +6,7 @@ const ActivityContainer = (props) => {
     return (
             <div className="sliderContainer">
                     <div className="pictureContainer">
-                        <img src={activities.pictures}/>
+                        <img height="100%" width="100%" src={activities.pictures}/>
                     </div>
                     <div className="activityInfo">
                         <div className="nameCost">
