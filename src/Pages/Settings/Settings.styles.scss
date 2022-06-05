@@ -2,13 +2,17 @@
    width: 30rem;
    margin: 5rem auto;
 
+   .headline {
+      color: #333333;
+   }
+
    .settingsFormContainer {
       box-sizing: border-box;
       width: 80%;
       padding: 1rem auto;
       margin: auto;
 
-      //   background-color: rgba(217, 217, 217, 0.2);
+      background-color: rgba(217, 217, 217, 0.2);
       border-radius: 10px;
 
       .imageInputBox {

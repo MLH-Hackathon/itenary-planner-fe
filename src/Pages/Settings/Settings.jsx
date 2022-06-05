@@ -20,7 +20,7 @@ const Settings = () => {
    };
    return (
       <div className="settingContainer">
-         <h1>Settings</h1>
+         <h1 className="headline">Settings</h1>
          <form
             action=""
             className="settingsFormContainer"
@@ -58,7 +58,7 @@ const Settings = () => {
                />
             </div>
             <div className="btnContainer">
-               <SubmitButton> RESET PASSWORD</SubmitButton>
+               <SubmitButton>RESET PASSWORD</SubmitButton>
             </div>
          </form>
       </div>

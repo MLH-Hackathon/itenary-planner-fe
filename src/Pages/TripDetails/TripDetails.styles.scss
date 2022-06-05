@@ -2,66 +2,68 @@
    width: 54rem;
    margin: auto;
    margin-top: 2rem;
-}
-.imageBox {
-   display: flex;
-   margin: 4rem auto;
-   justify-content: center;
-}
-.imageBox > img {
-   width: 10rem;
-   border-radius: 50%;
-}
-
-.formContainer {
-   width: 75%;
-   margin: auto;
-   background-color: rgba(217, 217, 217, 0.3);
-   border-radius: 10px;
-
-   .inputLabel {
-      margin-left: 0.5rem;
+   .headline {
+      color: #333333;
    }
-   .userInput {
-      margin: 0 0.35rem;
-      width: 40%;
-   }
-
-   .flexContainer {
-      width: 100%;
+   .imageBox {
       display: flex;
+      margin: 4rem auto;
+      justify-content: center;
    }
-   .flexContainer-numTravelers {
-      margin-top: 2rem;
-      width: 100%;
-      display: flex;
+   .imageBox > img {
+      width: 10rem;
+      border-radius: 50%;
    }
-   .flexContainer-numTravelers > input {
-      width: 2rem;
-      text-align: center;
-      margin-left: 2rem;
-   }
+   .formContainer {
+      width: 75%;
+      margin: auto;
+      background-color: rgba(217, 217, 217, 0.3);
+      border-radius: 10px;
 
-   .dateContainer {
-      margin-top: 1rem;
-      .datePicker {
-         margin-top: 0.25rem;
+      .inputLabel {
+         margin-left: 0.5rem;
+      }
+      .userInput {
+         margin: 0 0.35rem;
+         width: 40%;
+      }
+
+      .flexContainer {
+         width: 100%;
+         display: flex;
+      }
+      .flexContainer-numTravelers {
+         margin-top: 2rem;
+         width: 100%;
+         display: flex;
+      }
+      .flexContainer-numTravelers > input {
+         width: 2rem;
+         text-align: center;
+         margin-left: 2rem;
+      }
+
+      .dateContainer {
+         margin-top: 1rem;
+         .datePicker {
+            margin-top: 0.25rem;
+            width: 80%;
+         }
+      }
+      .btnContainer {
+         padding: 2rem 0;
+         margin: auto;
          width: 80%;
       }
-   }
-   .btnContainer {
-      padding: 2rem 0;
-      margin: auto;
-      width: 80%;
-   }
 
-   .flexContainer-spending {
-      margin-top: 2rem;
-      display: flex;
+      .flexContainer-spending {
+         margin-top: 2rem;
+         display: flex;
 
-      .totalSpending {
-         margin-left: 3rem;
-         width: 7rem;
+         .totalSpending {
+            margin-left: 3rem;
+            width: 7rem;
+         }
       }
    }
 }

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import DatePicker from 'react-datepicker';
 import { SubmitButton } from '../../Styles/Components/Button';
 import './TripDetails.styles.scss';
@@ -15,6 +15,9 @@ const TripDetails = () => {
 
    const handleSubmit = (e) => {
       e.preventDefault();
+      if (startDate.getTime() > endDate.getTime()) {
+         alert('Check Dates');
+      }
    };
 
    const handlestartLocation = (e) => {
@@ -41,12 +44,14 @@ const TripDetails = () => {
       console.log(e.target.value);
       setTotalSpending(e.target.value);
    };
+
+   useEffect(() => {}, []);
    return (
       <div className="tripDetailsContainer">
          <div className="imageBox">
             <img src={profile} alt="profile" />
          </div>
-         <h1>Enter Details of your Recent Trip..</h1>
+         <h1 className="headline">Enter Details of your Recent Trip..</h1>
          <form action="" className="formContainer" onSubmit={handleSubmit}>
             <label className="inputLabel">Travel Location</label>
             <div className="flexContainer">
@@ -89,6 +94,7 @@ const TripDetails = () => {
                   />
                   <DatePicker
                      className="datePicker"
+                     id="endDate"
                      selected={endDate}
                      placeholderText="To"
                      minDate={startDate}

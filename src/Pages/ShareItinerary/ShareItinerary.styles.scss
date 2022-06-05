@@ -6,7 +6,6 @@
    gap: 8rem;
 
    .profilePhoto {
-      opacity: 0.4;
       border-radius: 50%;
       width: 10rem;
       margin-top: 1rem;
@@ -15,7 +14,8 @@
 
    .subContainer {
       .headline {
-         margin-top: 0;
+         color: #333333;
+         margin-top: 1;
       }
       .formContainer2 {
          .label {

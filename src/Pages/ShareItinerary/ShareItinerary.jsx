@@ -29,8 +29,8 @@ export const ShareItinerary = () => {
       setTripDate(date);
    };
    const handleUpLoad = (e) => {
-      setImageName('hi');
-      console.log(e.target.files);
+      const fileName = e.target.value.replace(/^.*\\/, '');
+      setImageName([...fileName]);
    };
    return (
       <div className="itineraryContainer">
