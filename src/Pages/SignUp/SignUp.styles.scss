@@ -74,7 +74,9 @@ height:100%;
     color: white;
     cursor: pointer;
     margin-top: 20px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
  &:hover{
      background-color: #e6e6e6;
      color: #26313C;
