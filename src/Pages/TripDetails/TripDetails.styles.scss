@@ -1,4 +1,6 @@
 .tripDetailsContainer {
+   display: flex;
+   flex-direction: column;
    width: 54rem;
    margin: auto;
    margin-top: 2rem;
