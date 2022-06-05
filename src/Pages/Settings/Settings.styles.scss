@@ -1,0 +1,80 @@
+.settingContainer {
+   width: 30rem;
+   margin: 5rem auto;
+
+   .headline {
+      color: #333333;
+   }
+
+   .settingsFormContainer {
+      box-sizing: border-box;
+      width: 80%;
+      padding: 1rem auto;
+      margin: auto;
+
+      background-color: rgba(217, 217, 217, 0.2);
+      border-radius: 10px;
+
+      .imageInputBox {
+         position: relative;
+         margin: auto;
+         width: 12rem;
+
+         .imgProfile {
+            cursor: pointer;
+            border-radius: 50%;
+         }
+
+         .imgInput {
+            display: none;
+            visibility: none;
+         }
+      }
+
+      .changeImage {
+         position: absolute;
+         text-align: center;
+         left: 20%;
+         top: 45%;
+         color: white;
+         z-index: 10;
+      }
+   }
+
+   .nameBox {
+      box-sizing: border-box;
+      margin: auto;
+      width: 100%;
+      padding: 1rem;
+
+      .labelName {
+         margin-left: -0.1rem;
+      }
+   }
+   .nameBox > input {
+      box-sizing: border-box;
+      width: 100%;
+   }
+
+   .emailBox {
+      box-sizing: border-box;
+      margin: -0.25rem auto auto auto;
+      width: 100%;
+      padding: 0 1rem;
+      .labelEmail {
+         margin-left: -0.1rem;
+      }
+   }
+   .emailBox > input {
+      box-sizing: border-box;
+      width: 100%;
+   }
+
+   .btnContainer {
+      box-sizing: border-box;
+      margin: auto;
+      width: 100%;
+      padding: 1rem;
+      padding-bottom: 2.5rem;
+   }
+}
