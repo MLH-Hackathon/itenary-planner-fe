@@ -1,0 +1,40 @@
+
+.search {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+                      
+.searchInput{
+    width: 600px;
+}
+
+.heading1{
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+}
+
+.heading2{
+    display: inline;
+    font-size: 60px;
+    color: #666666;
+    font-weight: 900;
+
+}
+.subText{
+    margin-bottom: 30px;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.cardsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin:0 20% 0 20%;
+    padding: 20px;
+}

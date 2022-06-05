@@ -1,0 +1,60 @@
+.pictureContainer{
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sliderContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // background-color: blue;
+    height: 300px;
+    max-height: 500px;
+}
+
+.nameCost{
+    display: flex;
+    flex-direction: row;
+    font-weight:800;
+
+}
+
+.actName{
+    display: flex;
+    justify-content: flex-start ;
+    width: 100%;
+    padding: 20px 40px;
+    font-weight:800;
+}
+
+.actDescription{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    width: 100%;
+    padding: 20px 20px;
+    font-size: 15px;
+}
+
+.actAddress{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    font-size: 14px;
+}
+
+.actCost{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 20px 40px
+}
+
+.descAddress{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+justify-content: center;
+overflow: hidden;
+}
